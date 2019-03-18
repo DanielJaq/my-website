@@ -9,7 +9,7 @@ body {
 
 .container {
   width: 90%;
-  max-width: 1400PX;
+  max-width: 1200PX;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -150,8 +150,9 @@ header a:hover {
 
 #boxes .box {
   float: left;
-  width: 30.33%;
-  margin: 0 5px;
+  width: 30.43%;
+  height: 360px;
+  margin: 0 10px;
   text-align: center;
 }
 #boxes .about-me-box img {
