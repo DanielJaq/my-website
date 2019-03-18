@@ -151,7 +151,7 @@ header a:hover {
 #boxes .box {
   float: left;
   width: 30.43%;
-  height: 360px;
+  min-height: 410px;
   margin: 0 10px;
   text-align: center;
 }
