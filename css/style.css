@@ -294,6 +294,11 @@ footer {
   #showcase h1 {
     margin-top: 140px;
   }
+  #boxes .box {
+    float: none;
+    text-align: center;
+    width: 90%;
+  }
 }
 
 @media (max-width: 640px) {
@@ -314,5 +319,10 @@ footer {
   }
   .form {
     width: 100%;
+  }
+  header .header-nav a {
+    width: 15%;
+    padding: 23px 12px;
+    font-size: 13px;
   }
 }
