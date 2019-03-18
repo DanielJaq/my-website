@@ -8,8 +8,9 @@ body {
 }
 
 .container {
-  width: 80%;
-  margin: auto;
+  width: 90%;
+  max-width: 1400PX;
+  margin: 0 auto;
   overflow: hidden;
 }
 
@@ -18,6 +19,7 @@ body {
   width: 189px;
   border-radius: 6px;
   background: #1e90ff;
+  font-size: 16px;
   border: 0;
   color: #ffffff;
   text-transform: uppercase;
@@ -34,31 +36,34 @@ body {
 header {
   background: #35424a;
   color: #ffffff;
-  padding-top: 30px;
   min-height: 70px;
   border-bottom: #1e90ff 3px solid;
 }
 
 header a {
-  color: #ffffff;
-  text-decoration: none;
-  text-transform: uppercase;
+  display: inline-block;
   font-size: 16px;
 }
-
-header ul {
-  margin: 0;
-  padding: 0;
+header .header-nav {
+  display: inline-block;
 }
-
-header li {
-  float: left;
-  display: inline;
-  padding: 0 20px 0 20px;
+header .header-nav .about-nav{
+  padding: 25px 15px;
+}
+header .header-nav a{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 15px;
+  text-decoration: none;
+  transition: all 400ms;
+  text-decoration: none;
+  color: #fff;
 }
 
 header #branding {
   float: left;
+  margin: 12px 0;
 }
 
 header #branding h1 {
@@ -67,7 +72,10 @@ header #branding h1 {
 
 header nav {
   float: right;
-  margin-top: 10px;
+  margin-top: px;
+}
+header nav {
+  
 }
 
 header .highlight,
@@ -77,8 +85,9 @@ header .current a {
 }
 
 header a:hover {
-  color: #cccccc;
+  background-color: #1e90ff;
   font-weight: bold;
+  border-radius: 2px;
 }
 
 #showcase {
@@ -141,15 +150,25 @@ header a:hover {
 
 #boxes .box {
   float: left;
-  width: 30%;
-  margin: 0 1rem;
+  width: 30.33%;
+  margin: 0 5px;
   text-align: center;
 }
-
+#boxes .about-me-box img {
+  width: 110px;
+  border-radius: 9px;
+}
 #boxes .box img {
+  width: 260px;
+  border-radius: 9px;
+}
+#boxes .project-one img {
+  width: 230px;
+  border-radius: 9px
+}
+#boxes .about-me-box img {
   width: 110px;
 }
-
 .profileDesc {
   text-align: left;
 }
