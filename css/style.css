@@ -14,6 +14,11 @@ body {
   overflow: hidden;
 }
 
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .btn1 {
   height: 60px;
   width: 189px;
@@ -27,6 +32,13 @@ body {
   cursor: pointer;
   transition: 0.3s;
   opacity: 0.9;
+  outline: none;
+}
+
+.btn1 a {
+  text-decoration: none;
+  color: #f4f4f4;
+  padding: px 0px;
 }
 
 .btn1:hover {
@@ -59,11 +71,16 @@ header .header-nav a{
   transition: all 400ms;
   text-decoration: none;
   color: #fff;
+} 
+
+.nav-btn {
+  display: flex;
+  list-style-type: none;
 }
 
 header #branding {
   float: left;
-  margin: 12px 0;
+  /* margin: 12px 0; */
 }
 
 header #branding h1 {
@@ -72,10 +89,10 @@ header #branding h1 {
 
 header nav {
   float: right;
-  margin-top: px;
 }
-header nav {
-  
+
+.header-nav {
+  /* padding: 0px; */
 }
 
 header .highlight,
@@ -137,7 +154,7 @@ header a:hover {
 }
 
 #boxes {
-  margin-top: 20px;
+  margin: 60px 0;
 }
 
 #boxes h3 {
@@ -151,7 +168,6 @@ header a:hover {
 #boxes .box {
   float: left;
   width: 30.43%;
-  min-height: 410px;
   margin: 0 10px;
   text-align: center;
 }
@@ -170,8 +186,13 @@ header a:hover {
 #boxes .about-me-box img {
   width: 110px;
 }
+.portfolio-box {
+  min-height: 415px;
+}
 .profileDesc {
   text-align: left;
+  margin-top: -30px;
+  margin-bottom: 60px;
 }
 
 footer {
@@ -217,8 +238,12 @@ footer {
   text-align: center;
 }
 
+#contactlink {
+  margin-top: -90px;
+}
+
 .contact-form {
-  padding: 3rem;
+  padding: 60px;
   border-radius: 6px;
   text-align: center;
 }
@@ -231,6 +256,7 @@ footer {
   margin: 0 auto;
   float: left;
   border-radius: 10px 0 0px 10px;
+  color: white;
 }
 
 .form {
@@ -263,6 +289,7 @@ footer {
   transition: 0.3s;
   opacity: 0.9;
   margin-top: 50px;
+  outline: none;
 }
 
 .contact-info h3 {
@@ -288,6 +315,9 @@ footer {
     text-align: center;
     width: 100%;
   }
+  .nav-btn {
+    padding: 0px;
+  }
   #showcase {
     min-height: 420px;
   }
@@ -308,6 +338,9 @@ footer {
     float: none;
     text-align: center;
   }
+  .nav-btn {
+    padding: 0px;
+  }
   #showcase {
     min-height: 420px;
   }
@@ -320,9 +353,7 @@ footer {
   .form {
     width: 100%;
   }
-  header .header-nav a {
-    width: 15%;
-    padding: 23px 12px;
-    font-size: 13px;
+  .btn1 {
+    margin-bottom: 60px;
   }
 }
